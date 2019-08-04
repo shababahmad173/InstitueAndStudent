@@ -1,5 +1,7 @@
 package com.spiders.app.dto;
 
+import java.util.Date;
+
 public class UserDto {
 
 	private String firstName;
@@ -7,9 +9,7 @@ public class UserDto {
 	private String email;
 	private String userName;
 	private String password;
-	
-	private int age;
-	
+	private Date dob;
 	private String mobileNo;
 	private String role;
 	private String department;
@@ -46,7 +46,7 @@ public class UserDto {
 	@Override
 	public String toString() {
 		return "UserDto [firstName=" + firstName + ", lastName=" + lastName + ", email=" + email + ", userName="
-				+ userName + ", password=" + password + ", age=" + age + ", mobileNo=" + mobileNo + ", role=" + role
+				+ userName + ", password=" + password + ", dob=" + dob + ", mobileNo=" + mobileNo + ", role=" + role
 				+ ", department=" + department + ", address=" + address + "]";
 	}
 
@@ -120,12 +120,14 @@ public class UserDto {
 		this.address = address;
 	}
 
-	public int getAge() {
-		return age;
+	public Date getDob() {
+		return dob;
 	}
 
-	public void setAge(int age) {
-		this.age = age;
+	public void setDob(Date dob) {
+		this.dob = dob;
 	}
+
+
 
 }

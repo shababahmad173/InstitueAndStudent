@@ -11,14 +11,6 @@ import com.spiders.app.dto.UserDto;
 @Controller
 public class UserController {
 	
-	@RequestMapping("/")
-	String displayIndex(){
-		System.out.println("----------------------[");
-		System.out.println("inside method ");	
-		// this is a page name
-		return "AddUser";
-	}
-
 	// uri name
 	@RequestMapping(value ="/addUser" ,method= RequestMethod.POST)
 	String AddUser(UserDto user , BindingResult result){

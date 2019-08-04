@@ -5,7 +5,7 @@
 
 	<form action="addUser" method="post">
 		<table>
-
+			
 			<tr>
 				<!-- column one  -->
 				<td>first Name :</td>
@@ -31,7 +31,7 @@
 				<!-- column one  -->
 				<td>age :</td>
 				<!-- column two -->
-				<td><input type="text" name="age"></td>
+				<td><input type="text" name="dob"></td>
 			</tr>
 
 			<tr>
@@ -97,7 +97,5 @@
 		</table>
 
 	</form>
-
-
 </body>
 </html>
